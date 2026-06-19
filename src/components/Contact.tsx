@@ -92,12 +92,11 @@ export default function Contact() {
                 
                 <button
                   type="submit"
-                  className="w-full relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all bg-blue-600 rounded-xl hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)] overflow-hidden group/btn"
+                  className="w-full relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-950 transition-all bg-yellow-400 rounded-xl hover:bg-yellow-300 hover:shadow-[0_0_30px_rgba(250,204,21,0.3)] overflow-hidden group/btn"
                 >
-                  <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                  <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black/20"></span>
                   <span className="relative flex items-center">
                     Anfrage absenden
-                    <ArrowUpRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
                   </span>
                 </button>
               </form>

@@ -17,11 +17,11 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass border border-white/10 group">
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-transparent mix-blend-overlay z-10" />
-              <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" 
-                alt="Modern workspace" 
-                className="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700 ease-in-out"
-              />
+                <img 
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" 
+                  alt="Modernes Maketing-Büro (you) bist wichtig in Wolfurt" 
+                  className="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700 ease-in-out"
+                />
               <div className="absolute inset-x-0 bottom-0 p-8 z-20 bg-gradient-to-t from-zinc-950 to-transparent">
                 <div className="glass-card px-4 py-2 inline-flex items-center rounded-full">
                   <div className="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse" />

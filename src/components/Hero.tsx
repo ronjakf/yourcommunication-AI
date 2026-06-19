@@ -75,7 +75,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent mix-blend-overlay z-10" />
           <img 
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop" 
-            alt="Agentur Team" 
+            alt="Marketing Agentur Wolfurt - Kreatives Team bei der Arbeit" 
             className="w-full h-auto object-cover grayscale opacity-80 hover:grayscale-0 transition-all duration-700"
           />
         </motion.div>
