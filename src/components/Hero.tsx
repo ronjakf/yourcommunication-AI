@@ -27,7 +27,7 @@ export default function Hero() {
             className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter leading-[1.1] mb-8"
           >
             Klare Kommunikation.<br />
-            <span className="text-gradient">Sichtbare Strategie.</span>
+            <span className="text-gradient">Sichtbare Erfolge.</span>
           </motion.h1>
           
           <motion.p 
