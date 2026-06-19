@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 lg:py-32 relative">
       <div className="absolute inset-0 bg-zinc-950">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-indigo-900/20 via-zinc-950 to-zinc-950" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-900/20 via-zinc-950 to-zinc-950" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -27,12 +27,12 @@ export default function Contact() {
             
             <div className="space-y-8">
               <a href="mailto:yourcommunication@gmail.com" className="group flex items-start p-4 -ml-4 rounded-2xl hover:bg-white/5 transition-colors">
-                <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full border border-white/10 bg-zinc-900 group-hover:border-indigo-500/50 group-hover:bg-indigo-500/10 transition-colors">
-                  <Mail className="h-5 w-5 text-indigo-400" />
+                <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full border border-white/10 bg-zinc-900 group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-colors">
+                  <Mail className="h-5 w-5 text-blue-400" />
                 </div>
                 <div className="ml-6 flex-grow">
                   <p className="text-sm text-zinc-500 font-medium mb-1 uppercase tracking-wider">Lassen Sie uns schreiben</p>
-                  <p className="text-xl font-display text-white group-hover:text-indigo-300 transition-colors flex items-center">
+                  <p className="text-xl font-display text-white group-hover:text-blue-300 transition-colors flex items-center">
                     yourcommunication@gmail.com
                     <ArrowUpRight className="ml-2 h-4 w-4 opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
                   </p>
@@ -41,7 +41,7 @@ export default function Contact() {
               
               <div className="flex items-start p-4 -ml-4">
                 <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full border border-white/10 bg-zinc-900">
-                  <MapPin className="h-5 w-5 text-indigo-400" />
+                  <MapPin className="h-5 w-5 text-blue-400" />
                 </div>
                 <div className="ml-6">
                   <p className="text-sm text-zinc-500 font-medium mb-1 uppercase tracking-wider">Standort</p>
@@ -61,7 +61,7 @@ export default function Contact() {
             className="lg:col-span-7"
           >
             <div className="glass shadow-2xl shadow-black/50 p-8 sm:p-12 rounded-[2rem] border-white/10 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <h3 className="text-2xl font-display font-bold text-white mb-8">Senden Sie uns eine Nachricht</h3>
               
@@ -73,7 +73,7 @@ export default function Contact() {
                       type="text"
                       id="name"
                       name="Name"
-                      className="w-full px-5 py-4 bg-zinc-900/50 border border-white/10 rounded-xl text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                      className="w-full px-5 py-4 bg-zinc-900/50 border border-white/10 rounded-xl text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       placeholder="Max Mustermann"
                       required
                     />
@@ -84,7 +84,7 @@ export default function Contact() {
                       type="email"
                       id="email"
                       name="E-Mail"
-                      className="w-full px-5 py-4 bg-zinc-900/50 border border-white/10 rounded-xl text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                      className="w-full px-5 py-4 bg-zinc-900/50 border border-white/10 rounded-xl text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       placeholder="mail@beispiel.at"
                       required
                     />
@@ -97,7 +97,7 @@ export default function Contact() {
                     id="message"
                     name="Nachricht"
                     rows={4}
-                    className="w-full px-5 py-4 bg-zinc-900/50 border border-white/10 rounded-xl text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none"
+                    className="w-full px-5 py-4 bg-zinc-900/50 border border-white/10 rounded-xl text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
                     placeholder="Wie können wir Ihr Marketing verbessern?"
                     required
                   ></textarea>
@@ -105,7 +105,7 @@ export default function Contact() {
                 
                 <button
                   type="submit"
-                  className="w-full relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all bg-indigo-600 rounded-xl hover:bg-indigo-500 hover:shadow-[0_0_30px_rgba(79,70,229,0.3)] overflow-hidden group/btn"
+                  className="w-full relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all bg-blue-600 rounded-xl hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)] overflow-hidden group/btn"
                 >
                   <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
                   <span className="relative flex items-center">

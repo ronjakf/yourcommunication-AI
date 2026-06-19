@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <section id="about" className="py-24 lg:py-32 relative overflow-hidden">
-      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
+      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
@@ -16,7 +16,7 @@ export default function About() {
             className="lg:col-span-5 relative mb-16 lg:mb-0"
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass border border-white/10 group">
-              <div className="absolute inset-0 bg-gradient-to-tr from-indigo-900/40 to-transparent mix-blend-overlay z-10" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-transparent mix-blend-overlay z-10" />
               <img 
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" 
                 alt="Modern workspace" 
@@ -31,7 +31,7 @@ export default function About() {
             </div>
             
             {/* Decorative abstract shape */}
-            <div className="absolute -bottom-8 -right-8 w-48 h-48 rounded-full border border-indigo-500/30 border-dashed animate-[spin_20s_linear_infinite]" />
+            <div className="absolute -bottom-8 -right-8 w-48 h-48 rounded-full border border-blue-500/30 border-dashed animate-[spin_20s_linear_infinite]" />
           </motion.div>
           
           <motion.div 
@@ -41,7 +41,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-7"
           >
-            <h2 className="text-indigo-400 font-medium tracking-widest uppercase mb-4 text-sm">Über Uns</h2>
+            <h2 className="text-blue-400 font-medium tracking-widest uppercase mb-4 text-sm">Über Uns</h2>
             <h3 className="font-display text-4xl lg:text-6xl font-bold text-white tracking-tight mb-8">
               Nicht nur Dienstleister.<br />
               <span className="text-zinc-500">Ihr strategischer Partner.</span>
@@ -51,7 +51,7 @@ export default function About() {
               <p>
                 Als Marketing-Agentur im Herzen von Wolfurt haben wir eine klare Philosophie: <strong className="text-white font-medium">Weniger Lärm, mehr Relevanz.</strong> Wir verzichten auf kompliziertes Agentur-Kauderwelsch und fokussieren uns stattdessen auf das, was wirklich zählt: Ihren Erfolg.
               </p>
-              <div className="h-px w-24 bg-indigo-500/30 my-8" />
+              <div className="h-px w-24 bg-blue-500/30 my-8" />
               <p>
                 Wir verstehen die lokalen Gegebenheiten und helfen Unternehmen dabei, ihre Sichtbarkeit auszubauen. Mit gezielten Marketing Aktivitäten sorgen wir dafür, dass Ihre Botschaft genau dort ankommt, wo sie wirken soll.
               </p>

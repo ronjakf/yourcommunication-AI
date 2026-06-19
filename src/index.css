@@ -35,5 +35,5 @@ body {
 }
 
 .text-gradient-blue {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-600;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600;
 }

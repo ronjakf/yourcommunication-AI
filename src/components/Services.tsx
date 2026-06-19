@@ -43,7 +43,7 @@ export default function Services() {
             viewport={{ once: true }}
             className="flex flex-col items-center"
           >
-            <h2 className="text-indigo-400 font-medium tracking-widest uppercase mb-4 text-sm">Unsere Expertise</h2>
+            <h2 className="text-blue-400 font-medium tracking-widest uppercase mb-4 text-sm">Unsere Expertise</h2>
             <h3 className="font-display text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
               Wirksame Marketing Aktivitäten
             </h3>
@@ -68,9 +68,9 @@ export default function Services() {
                 variants={item}
                 className="group relative"
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl blur-xl" />
-                <div className="relative h-full flex flex-col glass-card border border-white/5 hover:border-indigo-500/30 p-8 lg:p-10 rounded-3xl transition-all duration-300 group-hover:-translate-y-2">
-                  <div className="h-14 w-14 rounded-2xl bg-zinc-800 border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-indigo-600 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-b from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl blur-xl" />
+                <div className="relative h-full flex flex-col glass-card border border-white/5 hover:border-blue-500/30 p-8 lg:p-10 rounded-3xl transition-all duration-300 group-hover:-translate-y-2">
+                  <div className="h-14 w-14 rounded-2xl bg-zinc-800 border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-300">
                     <Icon className="h-6 w-6 text-zinc-300 group-hover:text-white transition-colors" strokeWidth={1.5} />
                   </div>
                   <h4 className="text-2xl font-display font-bold text-white mb-4">{service.title}</h4>
