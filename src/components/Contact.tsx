@@ -26,19 +26,6 @@ export default function Contact() {
             </p>
             
             <div className="space-y-8">
-              <a href="mailto:yourcommunication@gmail.com" className="group flex items-start p-4 -ml-4 rounded-2xl hover:bg-white/5 transition-colors">
-                <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full border border-white/10 bg-zinc-900 group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-colors">
-                  <Mail className="h-5 w-5 text-blue-400" />
-                </div>
-                <div className="ml-6 flex-grow">
-                  <p className="text-sm text-zinc-500 font-medium mb-1 uppercase tracking-wider">Lassen Sie uns schreiben</p>
-                  <p className="text-xl font-display text-white group-hover:text-blue-300 transition-colors flex items-center">
-                    yourcommunication@gmail.com
-                    <ArrowUpRight className="ml-2 h-4 w-4 opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
-                  </p>
-                </div>
-              </a>
-              
               <div className="flex items-start p-4 -ml-4">
                 <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full border border-white/10 bg-zinc-900">
                   <MapPin className="h-5 w-5 text-blue-400" />
@@ -65,7 +52,7 @@ export default function Contact() {
               
               <h3 className="text-2xl font-display font-bold text-white mb-8">Senden Sie uns eine Nachricht</h3>
               
-              <form className="space-y-6 relative z-10" action="mailto:yourcommunication@gmail.com" method="post" encType="text/plain">
+              <form className="space-y-6 relative z-10" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="block text-sm font-medium text-zinc-400">Name</label>

@@ -47,7 +47,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <a
-              href="mailto:yourcommunication@gmail.com"
+              href="#contact"
               className="relative inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-white transition-all bg-blue-600 rounded-full hover:bg-blue-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.4)] group overflow-hidden"
             >
               <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
@@ -65,6 +65,20 @@ export default function Hero() {
             </a>
           </motion.div>
         </div>
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="mt-20 relative max-w-5xl mx-auto rounded-3xl overflow-hidden glass border border-white/10 shadow-2xl"
+        >
+          <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent mix-blend-overlay z-10" />
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop" 
+            alt="Agentur Team" 
+            className="w-full h-auto object-cover grayscale opacity-80 hover:grayscale-0 transition-all duration-700"
+          />
+        </motion.div>
       </div>
       
       {/* Bottom gradient fade */}
