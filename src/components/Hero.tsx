@@ -1,43 +1,74 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-medium mb-6">
-            <span className="flex h-2 w-2 rounded-full bg-blue-600 mr-2"></span>
-            Ihre Marketing-Agentur in Wolfurt
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
+    <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden">
+      {/* Dynamic background elements */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-indigo-500/30 text-indigo-300 text-sm font-medium mb-8"
+          >
+            <Sparkles className="h-4 w-4" />
+            <span>Ihre Marketing-Agentur in Wolfurt</span>
+          </motion.div>
+          
+          <motion.h1 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter leading-[1.1] mb-8"
+          >
             Klare Kommunikation.<br />
-            <span className="text-blue-600">Sichtbare Erfolge.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">
-            Wir bringen Ihre Marke auf den Punkt. Als lokale Agentur für Marketing Aktivitäten entwickeln wir Strategien, die direkt zu Ihren Zielen führen.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+            <span className="text-gradient">Sichtbare Erfolge.</span>
+          </motion.h1>
+          
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-lg md:text-2xl text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light"
+          >
+            Wir bringen Ihre Marke auf den Punkt. Als lokale Agentur entwickeln wir 
+            Strategien, die direkt zu Ihren Zielen führen.
+          </motion.p>
+          
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-6"
+          >
             <a
               href="mailto:yourcommunication@gmail.com"
-              className="inline-flex justify-center items-center px-6 py-3.5 border border-transparent text-base font-medium rounded-sm text-white bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow transition-all duration-200"
+              className="relative inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-white transition-all bg-indigo-600 rounded-full hover:bg-indigo-500 hover:shadow-[0_0_40px_rgba(79,70,229,0.4)] group overflow-hidden"
             >
-              Jetzt Kontakt aufnehmen
+              <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                <div className="relative h-full w-8 bg-white/20" />
+              </div>
+              <span className="relative">Jetzt Kontakt aufnehmen</span>
             </a>
+            
             <a
               href="#services"
-              className="inline-flex justify-center items-center px-6 py-3.5 border border-gray-300 text-base font-medium rounded-sm text-gray-700 bg-white hover:bg-gray-50 hover:text-blue-600 transition-colors duration-200"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-medium text-zinc-300 transition-colors border border-zinc-800 rounded-full hover:bg-zinc-800/50 hover:text-white group"
             >
-              Dienstleistungen ansehen
-              <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
+              Dienstleistungen entdecken
+              <ArrowRight className="ml-2 -mr-1 h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
       
-      {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3">
-        <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-br from-blue-100/40 to-transparent blur-3xl" />
-      </div>
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-zinc-950 to-transparent z-10" />
     </section>
   );
 }

@@ -13,9 +13,10 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans text-gray-900 bg-white selection:bg-blue-100 selection:text-blue-900">
+    <div className="relative min-h-screen font-sans text-zinc-50 bg-zinc-950 selection:bg-blue-500/30 selection:text-blue-200 overflow-hidden">
+      <div className="bg-noise"></div>
       <Header />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <Services />
         <About />
