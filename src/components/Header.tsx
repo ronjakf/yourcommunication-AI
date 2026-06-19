@@ -27,7 +27,7 @@ export default function Header() {
         }`}>
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="font-display font-bold text-2xl tracking-tighter text-white">
-              (you)<span className="text-zinc-500 font-medium ml-2 text-xl">bist wichtig</span>
+              (you)<span className="text-blue-400">r</span><span className="text-zinc-500 font-medium ml-2 text-xl">communication</span>
             </a>
           </div>
           

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0 text-center md:text-left">
            <span className="font-bold text-xl tracking-tight text-white">
-              (you)<span className="text-gray-500 font-medium ml-2 text-xl">bist wichtig</span>
+              (you)<span className="text-blue-500">r</span> communication
             </span>
             <p className="mt-2 text-sm text-gray-500">
               Ihre Marketing-Agentur in Wolfurt.
@@ -21,7 +21,7 @@ export default function Footer() {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-gray-900 text-sm text-center md:text-left text-gray-600 flex flex-col md:flex-row justify-between">
-        <p>&copy; {currentYear} (you) bist wichtig. Alle Rechte vorbehalten.</p>
+        <p>&copy; {currentYear} (you)r communication. Alle Rechte vorbehalten.</p>
         <div className="mt-4 md:mt-0 flex space-x-4 justify-center">
           <a href="#" className="hover:text-gray-300 transition-colors">Impressum</a>
           <a href="#" className="hover:text-gray-300 transition-colors">Datenschutz</a>
