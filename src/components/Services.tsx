@@ -1,5 +1,5 @@
 import { BarChart3, Target, Megaphone } from 'lucide-react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 const services = [
   {
