@@ -26,8 +26,8 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter leading-[1.1] mb-8"
           >
-            Klare Kommunikation.<br />
-            <span className="text-gradient">Sichtbare Erfolge.</span>
+            Sichtbare Kommunikation<br />
+            <span className="text-gradient">& Erfolge.</span>
           </motion.h1>
           
           <motion.p 
